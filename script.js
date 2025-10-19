@@ -1,8 +1,8 @@
 const quizData = {
-    sts: [
+    sts: [ // Keep existing STS questions here
         { question: "What does the Latin word 'scientia,' from which 'science' is derived, mean?", options: ["To invent", "To discover", "Knowledge", "Nature"], answer: "Knowledge" },
         { question: "Which concept refers to a systematic activity of organizing knowledge about the universe through observation and experimentation?", options: ["Technology", "Society", "Science", "Philosophy"], answer: "Science" },
-        { question: "Which of the following is NOT a primary characteristic of science?", options: ["It demands evidence", "It is a complex social activity", "It provides complete answers to all questions", "Scientific ideas are open to change"], answer: "It provides complete answers to all questions" },
+        { question: "According to the modules, which of the following is NOT a primary characteristic of science?", options: ["It demands evidence", "It is a complex social activity", "It provides complete answers to all questions", "Scientific ideas are open to change"], answer: "It provides complete answers to all questions" },
         { question: "What is defined as the practical application of scientific results to develop tools, equipment, and techniques?", options: ["Philosophy", "Society", "Technology", "Ideology"], answer: "Technology" },
         { question: "The academic field of STS (Science, Technology, and Society) traces its roots to which historical period?", options: ["The Renaissance", "The Industrial Revolution", "The Interwar period and Cold War", "The Enlightenment"], answer: "The Interwar period and Cold War" },
         { question: "What is the primary goal of studying STS?", options: ["To become an expert in coding", "To memorize scientific formulas", "To bridge the gap between humanities and natural sciences", "To focus only on historical inventions"], answer: "To bridge the gap between humanities and natural sciences" },
@@ -31,6 +31,7 @@ const quizData = {
         { question: "The term 'algorithm' is derived from the name of which Persian mathematician?", options: ["Ibn al-Haytham", "Omar Khayyam", "Muhammad ibn Musa al-Khwarizmi", "Al-Kindi"], answer: "Muhammad ibn Musa al-Khwarizmi" },
         { question: "Ancient Egyptian alchemists laid the foundation for which modern scientific field?", options: ["Biology", "Physics", "Chemistry", "Astronomy"], answer: "Chemistry" },
         { question: "In the pre-colonial Philippines, the Banaue Rice Terraces are a prime example of indigenous:", options: ["Written language", "Religious rituals", "Science and technology in agriculture", "Military fortification"], answer: "Science and technology in agriculture" },
+        { question: "The Galleon Trade during the Spanish era facilitated the exchange of goods and ideas between the Philippines and:", options: ["China", "The Americas (via Mexico)", "India", "Japan"], answer: "The Americas (via Mexico)" },
         { question: "Who was the Filipino medical doctor who studied beriberi in infants in the Philippines?", options: ["Fe del Mundo", "Manuel S. Guerrero", "Leon Ma. Guerrero", "Anacleto del Rosario"], answer: "Manuel S. Guerrero" },
         { question: "Which Filipina scientist is famous for inventing a medical incubator made from indigenous and cheap materials?", options: ["Lourdes Cruz", "Fe del Mundo", "Aisa Mijeno", "Mari-Jo Ruiz"], answer: "Fe del Mundo" },
         { question: "The 'Balik Scientist Program' was established to:", options: ["Fund research for local scientists only", "Encourage Filipino scientists working abroad to return to the Philippines", "Provide scholarships for high school students", "Establish new science museums"], answer: "Encourage Filipino scientists working abroad to return to the Philippines" },
@@ -50,8 +51,7 @@ const quizData = {
         { question: "The theory of relativity, which includes the famous equation E=mc², was developed by:", options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Max Planck"], answer: "Albert Einstein" },
         { question: "Acupuncture is a traditional medical practice that originated in:", options: ["India", "Japan", "China", "Korea"], answer: "China" }
     ],
-    hci: [
-        
+    hci: [ // Keep existing HCI questions here
         { question: "What does HCI stand for?", options: ["Human-Computer Interaction", "Human-Computer Interface", "Human-Centered Integration", "Highly-Complex Interaction"], answer: "Human-Computer Interaction" },
         { question: "The design principle of providing information about what action has been done is called:", options: ["Visibility", "Constraint", "Feedback", "Affordance"], answer: "Feedback" },
         { question: "Which of the following is a subjective 'User Experience Goal'?", options: ["Learnability", "Effectiveness", "Enjoyable", "Efficiency"], answer: "Enjoyable" },
@@ -103,8 +103,7 @@ const quizData = {
         { question: "In the Double Diamond model, the 'Develop' phase involves:", options: ["Narrowing down to one final idea", "Researching the problem space", "Creating and testing multiple potential solutions", "Launching the product"], answer: "Creating and testing multiple potential solutions" },
         { question: "The main purpose of a conceptual model is to:", options: ["Provide a detailed technical specification", "Establish a common ground for the design team", "Act as a marketing document", "List all the features of the product"], answer: "Establish a common ground for the design team" }
     ],
-    nstp: [
-        
+    nstp: [ // Keep existing NSTP questions here
         { question: "What Republic Act established the National Service Training Program (NSTP)?", options: ["RA 8491", "RA 10121", "RA 9163", "RA 9003"], answer: "RA 9163" },
         { question: "Which is NOT one of the three components of NSTP?", options: ["ROTC", "LTS", "CWTS", "NSRC"], answer: "NSRC" },
         { question: "Which NSTP component is designed to provide military training for national defense preparedness?", options: ["LTS", "CWTS", "ROTC", "All of the above"], answer: "ROTC" },
@@ -156,8 +155,7 @@ const quizData = {
         { question: "The preamble of the constitution is an introductory statement that outlines the ____ of the government.", options: ["History and structure", "Powers and limitations", "Principles and purposes", "List of officials"], answer: "Principles and purposes" },
         { question: "Which program component of NSTP did the ROTC program replace for those who do not wish to join the military?", options: ["LTS and CWTS", "NSRC and LTS", "Only CWTS", "Only LTS"], answer: "LTS and CWTS" }
     ],
-    intro_to_computing: [
-         
+    intro_to_computing: [ // Keep existing Intro to Computing questions here
         { question: "Which of the following is NOT one of the five main components of a computer?", options: ["Input Devices", "Output Devices", "System Unit", "Application Software"], answer: "Application Software" },
         { question: "A keyboard and a mouse are examples of what type of device?", options: ["Output", "Storage", "Input", "Communication"], answer: "Input" },
         { question: "The main circuit board of the system unit is the:", options: ["CPU", "RAM", "Motherboard", "Hard Drive"], answer: "Motherboard" },
@@ -208,6 +206,57 @@ const quizData = {
         { question: "The main page of a website is called the:", options: ["Index page", "Homepage", "Directory", "Root"], answer: "Homepage" },
         { question: "Which of these is a utility program?", options: ["Word Processor", "Web Browser", "File Manager", "Spreadsheet"], answer: "File Manager" },
         { question: "A 'Wizard' in a software application is a:", options: ["Security feature", "Help file", "Step-by-step guide for a task", "Programming tool"], answer: "Step-by-step guide for a task" }
+    ],
+    mmw: [ // Added MMW questions
+        { question: "Which term describes an arrangement that helps observers anticipate, model, and understand reality?", options: ["Sequence", "Pattern", "Ratio", "Symmetry"], answer: "Pattern" },
+        { question: "What type of pattern involves classifying objects based on characteristics or order, often seen in aptitude tests?", options: ["Number Patterns", "Logic Patterns", "Geometric Patterns", "Word Patterns"], answer: "Logic Patterns" },
+        { question: "A sequence formed by adding or subtracting a constant value is called:", options: ["Geometric Sequence", "Fibonacci Sequence", "Arithmetic Sequence", "Quadratic Sequence"], answer: "Arithmetic Sequence" },
+        { question: "What is the common difference in the arithmetic sequence 1, 3, 5, 7, 9?", options: ["1", "2", "3", "4"], answer: "2" },
+        { question: "A sequence where each term is found by multiplying the previous term by a constant value is a:", options: ["Arithmetic Sequence", "Geometric Sequence", "Fibonacci Sequence", "Lucas Sequence"], answer: "Geometric Sequence" },
+        { question: "What is the common ratio in the geometric sequence 4, 2, 1, 0.5?", options: ["2", "4", "0.5", "1"], answer: "0.5" },
+        { question: "The sequence 1, 4, 9, 16, 25 consists of:", options: ["Prime Numbers", "Fibonacci Numbers", "Perfect Squares", "Odd Numbers"], answer: "Perfect Squares" },
+        { question: "What type of pattern involves abstract shapes like lines and polygons repeating regularly?", options: ["Number Patterns", "Logic Patterns", "Geometric Patterns", "Word Patterns"], answer: "Geometric Patterns" },
+        { question: "Which term describes a figure having symmetry if a non-trivial transformation maps it onto itself?", options: ["Ratio", "Sequence", "Pattern", "Symmetry"], answer: "Symmetry" },
+        { question: "Bilateral symmetry means an object can be divided by an imaginary line into:", options: ["Three equal parts", "Two mirror images", "Four quadrants", "Multiple radial sections"], answer: "Two mirror images" },
+        { question: "Radial symmetry occurs when an object looks the same after being rotated around a:", options: ["Horizontal axis", "Vertical axis", "Central point", "Diagonal line"], answer: "Central point" },
+        { question: "What is the angle of rotation for an object with five-fold symmetry, like a starfish?", options: ["60°", "72°", "90°", "120°"], answer: "72°" },
+        { question: "Patterns that emerge naturally from simple rules without a central planner are called:", options: ["Invoked Patterns", "Designed Patterns", "Self-Organized Patterns", "Artificial Patterns"], answer: "Self-Organized Patterns" },
+        { question: "The V-formation of flying geese is an example of which type of pattern?", options: ["Invoked Pattern", "Symmetry", "Self-Organized Pattern", "Geometric Pattern"], answer: "Self-Organized Pattern" },
+        { question: "The formula A = Pe^(rt) is used to model what kind of growth?", options: ["Linear Growth", "Arithmetic Growth", "Exponential Growth", "Quadratic Growth"], answer: "Exponential Growth" },
+        { question: "The sequence 1, 1, 2, 3, 5, 8, 13... is known as the:", options: ["Lucas Sequence", "Arithmetic Sequence", "Geometric Sequence", "Fibonacci Sequence"], answer: "Fibonacci Sequence" },
+        { question: "Who introduced the sequence where each number is the sum of the two preceding ones?", options: ["Isaac Newton", "Euclid", "Leonardo Pisano (Fibonacci)", "Pythagoras"], answer: "Leonardo Pisano (Fibonacci)" },
+        { question: "What is the recursive formula for the Fibonacci sequence (for n ≥ 3)?", options: ["Fn = Fn-1 * Fn-2", "Fn = Fn-1 + Fn-2", "Fn = 2 * Fn-1", "Fn = n^2"], answer: "Fn = Fn-1 + Fn-2" },
+        { question: "The ratio of consecutive Fibonacci numbers (Fn / Fn-1) approaches what value as n becomes large?", options: ["Pi (π)", "Euler's number (e)", "The Golden Ratio (φ)", "Zero (0)"], answer: "The Golden Ratio (φ)" },
+        { question: "What is the approximate numerical value of the Golden Ratio (φ)?", options: ["3.141", "2.718", "1.618", "1.414"], answer: "1.618" },
+        { question: "Which is NOT a characteristic of mathematical language?", options: ["Precise", "Concise", "Ambiguous", "Powerful"], answer: "Ambiguous" },
+        { question: "In mathematics, '2x - 5' is an example of a(n):", options: ["Sentence", "Equation", "Expression", "Inequality"], answer: "Expression" },
+        { question: "What acts as the 'verb' in the mathematical sentence 'ax + by = 3'?", options: ["a", "x", "+", "="], answer: "=" },
+        { question: "Which symbol represents 'is an element of' in set theory?", options: ["⊂", "∪", "∩", "∈"], answer: "∈" },
+        { question: "The set A = {x | x is a positive odd number} uses which method of description?", options: ["Roster Method", "Tabular Method", "Set Builder Notation", "Venn Diagram"], answer: "Set Builder Notation" },
+        { question: "What is the cardinality of the set C = {a, e, i, o, u}?", options: ["26", "5", "1", "Infinite"], answer: "5" },
+        { question: "A set with no elements is called the:", options: ["Universal Set", "Unit Set", "Power Set", "Empty Set (Null Set)"], answer: "Empty Set (Null Set)" },
+        { question: "If A = {1, 2} and B = {a, b}, what is the Cartesian Product A × B?", options: ["{(1,a), (2,b)}", "{(1,a), (1,b), (2,a), (2,b)}", "{1, 2, a, b}", "{(a,1), (b,2)}"], answer: "{(1,a), (1,b), (2,a), (2,b)}" },
+        { question: "A relation where each input (x-value) is paired with exactly one output (y-value) is a:", options: ["Set", "Cartesian Product", "Function", "Domain"], answer: "Function" },
+        { question: "Given f(x) = x + 4, what is f(3)?", options: ["3", "4", "7", "1"], answer: "7" },
+        { question: "What branch of logic deals with propositions (statements that are true or false)?", options: ["Set Theory", "Predicate Logic", "Propositional Logic", "Number Theory"], answer: "Propositional Logic" },
+        { question: "Which logical connective represents 'AND'?", options: ["∨", "¬", "→", "∧"], answer: "∧" },
+        { question: "What is the negation (¬p) of the proposition p: 'It is sunny'?", options: ["It is cloudy", "It is raining", "It is not sunny", "It is warm"], answer: "It is not sunny" },
+        { question: "A compound proposition that is always true regardless of the truth values of its components is a:", options: ["Contradiction", "Contingency", "Tautology", "Equivalence"], answer: "Tautology" },
+        { question: "What type of reasoning uses patterns and examples to make general conclusions?", options: ["Deductive", "Syllogistic", "Inductive", "Conditional"], answer: "Inductive" },
+        { question: "Deductive reasoning moves from:", options: ["Specific to General", "General to Specific", "Observation to Hypothesis", "Analogy to Conclusion"], answer: "General to Specific" },
+        { question: "A syllogism 'All men are mortal. Socrates is a man. Therefore, Socrates is mortal.' is an example of:", options: ["Inductive Reasoning", "Proof by Contradiction", "Deductive Reasoning", "Statistical Inference"], answer: "Deductive Reasoning" },
+        { question: "What is the median of the dataset: 4, 8, 9, 12, 14, 21?", options: ["9", "12", "10.5", "11"], answer: "10.5" },
+        { question: "Which measure of central tendency represents the most frequently occurring value?", options: ["Mean", "Median", "Mode", "Range"], answer: "Mode" },
+        { question: "If a dataset has scores 10, 20, 20, 30, 70, what is the mode?", options: ["10", "20", "30", "No mode"], answer: "20" },
+        { question: "Calculating a student's GPA based on grades and course units uses which type of mean?", options: ["Arithmetic Mean", "Geometric Mean", "Harmonic Mean", "Weighted Mean"], answer: "Weighted Mean" },
+        { question: "Which measure of dispersion is calculated as the difference between the largest and smallest values?", options: ["Variance", "Standard Deviation", "Range", "Mean Deviation"], answer: "Range" },
+        { question: "The standard deviation measures:", options: ["The average value", "The middle value", "The most frequent value", "The average spread of data around the mean"], answer: "The average spread of data around the mean" },
+        { question: "A z-score indicates:", options: ["The percentile rank", "The number of standard deviations a value is from the mean", "The range of the data", "The mode of the data"], answer: "The number of standard deviations a value is from the mean" },
+        { question: "In a normal distribution, what percentage of data lies within 1 standard deviation of the mean?", options: ["50%", "68%", "95%", "99.7%"], answer: "68%" },
+        { question: "The standard normal distribution has a mean of ___ and a standard deviation of ___.", options: ["1, 0", "0, 1", "1, 1", "0, 0"], answer: "0, 1" },
+        { question: "What does a correlation coefficient (r) close to +1 indicate?", options: ["Strong negative linear relationship", "Weak negative linear relationship", "Strong positive linear relationship", "No linear relationship"], answer: "Strong positive linear relationship" },
+        { question: "Linear regression aims to find the:", options: ["Correlation coefficient", "Standard deviation", "Line of best fit for the data", "Median of the data"], answer: "Line of best fit for the data" },
+        { question: "If a dataset is skewed to the left (negatively skewed), the tail is longer on which side?", options: ["Right", "Left", "Both sides equally", "Middle"], answer: "Left" }
     ]
 };
 
@@ -238,7 +287,7 @@ let currentSubject = '';
 let allQuestions = [];
 let currentQuizQuestions = [];
 let answeredQuestions = [];
-const questionsPerQuiz = 50;
+const questionsPerQuiz = 50; // Keep this at 50 to match the number of questions per subject
 let score = 0;
 let currentQuestionIndex = 0;
 
@@ -252,9 +301,23 @@ function shuffleArray(array) {
 
 function startQuiz() {
     currentSubject = subjectSelect.value;
+    // Ensure allQuestions is populated correctly for the selected subject
+    if (!quizData[currentSubject] || quizData[currentSubject].length === 0) {
+        alert("No questions available for this subject yet!");
+        return; // Stop if no questions
+    }
     allQuestions = [...quizData[currentSubject]];
-    currentQuizQuestions = shuffleArray(allQuestions).slice(0, questionsPerQuiz);
-    
+    // Ensure we don't try to slice more questions than available
+    const numAvailableQuestions = allQuestions.length;
+    const questionsToTake = Math.min(questionsPerQuiz, numAvailableQuestions);
+
+    currentQuizQuestions = shuffleArray(allQuestions).slice(0, questionsToTake);
+
+    // If fewer than 'questionsPerQuiz' are available, adjust the total count displayed
+    if (currentQuizQuestions.length < questionsPerQuiz) {
+        console.warn(`Only ${currentQuizQuestions.length} questions available for ${currentSubject}. Quiz length adjusted.`);
+    }
+
     currentQuestionIndex = 0;
     score = 0;
     answeredQuestions = [];
@@ -262,16 +325,32 @@ function startQuiz() {
     startScreen.classList.add('hidden');
     resultsScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
-    
+
     nextBtn.classList.add('hidden');
     updateScoreDisplay();
-    loadQuestion();
+    // Check if there are any questions to load
+    if (currentQuizQuestions.length > 0) {
+      loadQuestion();
+    } else {
+      alert("Error: Could not load questions for the quiz.");
+      // Optionally show start screen again or an error message
+      startScreen.classList.remove('hidden');
+      quizScreen.classList.add('hidden');
+    }
 }
+
 
 function loadQuestion() {
     // Reset options container
     optionsContainer.innerHTML = '';
     nextBtn.classList.add('hidden');
+
+    // Check if currentQuestionIndex is valid
+    if (currentQuestionIndex >= currentQuizQuestions.length) {
+        console.error("Attempted to load question index out of bounds.");
+        showResults(); // Go to results if no more questions
+        return;
+    }
 
     const currentQuestion = currentQuizQuestions[currentQuestionIndex];
     questionText.textContent = currentQuestion.question;
@@ -280,7 +359,8 @@ function loadQuestion() {
     shuffledOptions.forEach(option => {
         const button = document.createElement('button');
         button.textContent = option;
-        button.classList.add('option-btn', 'btn', 'w-full', 'p-4', 'text-left', 'bg-white', 'border-2', 'border-slate-300', 'rounded-lg', 'hover:bg-slate-50', 'hover:border-blue-500');
+        // Make sure base classes are always applied
+        button.className = 'option-btn btn w-full p-4 text-left bg-white border-2 border-slate-300 rounded-lg hover:bg-slate-50 hover:border-blue-500';
         button.onclick = () => selectAnswer(button, option);
         optionsContainer.appendChild(button);
     });
@@ -288,17 +368,23 @@ function loadQuestion() {
     updateProgress();
 }
 
+
 function selectAnswer(button, selectedOption) {
+     // Check if currentQuestionIndex is valid
+    if (currentQuestionIndex >= currentQuizQuestions.length) {
+        console.error("Attempted to answer question index out of bounds.");
+        return; // Prevent errors if index is wrong
+    }
     const currentQuestion = currentQuizQuestions[currentQuestionIndex];
     const isCorrect = selectedOption === currentQuestion.answer;
-    
+
     if (isCorrect) {
         score++;
         button.classList.add('correct');
     } else {
         button.classList.add('incorrect');
     }
-    
+
     answeredQuestions.push({
         question: currentQuestion.question,
         selected: selectedOption,
@@ -306,21 +392,30 @@ function selectAnswer(button, selectedOption) {
         isCorrect: isCorrect
     });
 
- 
+
     Array.from(optionsContainer.children).forEach(btn => {
+        // Ensure btn.textContent is checked before adding class
         if (btn.textContent === currentQuestion.answer) {
-            btn.classList.add('correct');
+             // Avoid adding 'correct' if it was already marked 'incorrect'
+            if (!btn.classList.contains('incorrect')) {
+                 btn.classList.add('correct');
+            }
         }
-        btn.disabled = true;
+        btn.disabled = true; // Disable all buttons after an answer is selected
     });
-    
+
     updateScoreDisplay();
-    nextBtn.classList.remove('hidden');
+    nextBtn.classList.remove('hidden'); // Show next button
 }
 
+
 function updateProgress() {
-    const progressPercentage = ((currentQuestionIndex + 1) / currentQuizQuestions.length) * 100;
-    questionCounter.textContent = `Question ${currentQuestionIndex + 1}/${currentQuizQuestions.length}`;
+    // Handle case where there might be 0 questions
+    const totalQuestions = currentQuizQuestions.length > 0 ? currentQuizQuestions.length : 1;
+    const currentQNumber = currentQuestionIndex + 1;
+    const progressPercentage = (currentQNumber / totalQuestions) * 100;
+
+    questionCounter.textContent = `Question ${currentQNumber}/${currentQuizQuestions.length}`;
     progressBar.style.width = `${progressPercentage}%`;
 }
 
@@ -341,9 +436,11 @@ function showResults() {
     quizScreen.classList.add('hidden');
     resultsScreen.classList.remove('hidden');
 
+    // Handle case with 0 questions to avoid division by zero
+    const totalQuestionsForResult = currentQuizQuestions.length > 0 ? currentQuizQuestions.length : 1;
     finalScoreText.textContent = `Your final score is ${score} out of ${currentQuizQuestions.length}.`;
-    
-    const scorePercentage = Math.round((score / currentQuizQuestions.length) * 100);
+
+    const scorePercentage = Math.round((score / totalQuestionsForResult) * 100);
     if (scorePercentage >= 80) {
         resultMessage.textContent = "Excellent work! You've mastered the material.";
         resultIcon.className = "fas fa-trophy text-6xl text-amber-400 mb-4";
@@ -354,23 +451,38 @@ function showResults() {
         resultMessage.textContent = "Keep studying! You can improve with a bit more practice.";
         resultIcon.className = "fas fa-book-open text-6xl text-orange-500 mb-4";
     }
-    
+
     displayStatistics();
 }
 
 function displayStatistics() {
+     // Handle case with 0 questions
+    const totalQuestionsForStats = currentQuizQuestions.length > 0 ? currentQuizQuestions.length : 1;
     const correctCount = answeredQuestions.filter(q => q.isCorrect).length;
     const incorrectCount = currentQuizQuestions.length - correctCount;
-    const percentage = Math.round((correctCount / currentQuizQuestions.length) * 100);
-    
+    const percentage = Math.round((correctCount / totalQuestionsForStats) * 100);
+
     correctAnswersEl.textContent = correctCount;
     incorrectAnswersEl.textContent = incorrectCount;
     scorePercentageEl.textContent = `${percentage}%`;
 }
 
+
+// Ensure event listeners are correctly assigned
 startBtn.addEventListener('click', startQuiz);
 nextBtn.addEventListener('click', showNextQuestion);
 retryBtn.addEventListener('click', () => {
+     // Reset quiz state variables if necessary before showing start screen
+     currentQuestionIndex = 0;
+     score = 0;
+     answeredQuestions = [];
+     currentQuizQuestions = []; // Clear current questions
+     // Hide results and quiz screens, show start screen
      startScreen.classList.remove('hidden');
+     quizScreen.classList.add('hidden');
      resultsScreen.classList.add('hidden');
+     // Reset progress bar and score display visually if needed
+     progressBar.style.width = `0%`;
+     scoreDisplay.textContent = `Score: 0`;
+     questionCounter.textContent = `Question 1/${questionsPerQuiz}`; // Reset counter display
 });
