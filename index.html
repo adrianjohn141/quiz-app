@@ -11,7 +11,7 @@
 <body class="bg-slate-100 flex items-center justify-center min-h-screen p-4">
 
     <div id="app-container" class="w-full max-w-2xl mx-auto">
-       
+
         <div id="start-screen" class="card p-8 md:p-12 text-center">
             <i class="fas fa-graduation-cap text-5xl text-blue-600 mb-4"></i>
             <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2">Quiz Time!</h1>
@@ -23,12 +23,12 @@
                     <option value="hci">Human-Computer Interaction</option>
                     <option value="nstp">NSTP</option>
                     <option value="intro_to_computing">Introduction to Computing</option>
-                </select>
+                    <option value="mmw">Mathematics in the Modern World</option> </select>
             </div>
             <button id="start-btn" class="btn w-full max-w-xs mx-auto bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700">Start Quiz</button>
         </div>
 
-       
+
         <div id="quiz-screen" class="card p-8 md:p-12 hidden">
             <div class="flex justify-between items-center mb-6">
                 <p id="question-counter" class="text-slate-600 font-medium">Question 1/50</p>
@@ -45,14 +45,14 @@
             </div>
         </div>
 
-        
+
         <div id="results-screen" class="card p-8 md:p-12 text-center hidden">
             <i id="result-icon" class="fas fa-trophy text-6xl text-amber-400 mb-4"></i>
             <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2">Quiz Completed!</h1>
             <p id="final-score-text" class="text-2xl text-slate-600 mb-4">Your final score is 8 out of 10.</p>
             <p id="result-message" class="text-lg text-slate-500 mb-8">Great job! You have a solid understanding.</p>
-            
-            
+
+
             <div id="stats-container" class="mt-8 pt-6 border-t border-slate-200">
                 <h3 class="text-xl font-bold text-slate-700 mb-4">Quiz Statistics</h3>
                 <div class="flex justify-around text-center">
