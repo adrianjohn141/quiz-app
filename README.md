@@ -26,6 +26,7 @@ A simple and responsive quiz web application built with HTML, Tailwind CSS, and 
 *   Human-Computer Interaction
 *   NSTP
 *   Introduction to Computing
+*   Mathematics in the Modern World
 
 ## Technologies Used
 
