@@ -42,7 +42,7 @@
 <body class="bg-slate-100 flex items-center justify-center min-h-screen p-4">
 
     <div id="app-container" class="w-full max-w-2xl mx-auto">
-        <!-- Start Screen -->
+       
         <div id="start-screen" class="card p-8 md:p-12 text-center">
             <i class="fas fa-graduation-cap text-5xl text-blue-600 mb-4"></i>
             <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2">Quiz Time!</h1>
@@ -52,13 +52,14 @@
                 <select id="subject-select" class="w-full max-w-xs mx-auto p-3 border border-slate-300 rounded-lg text-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                     <option value="sts">Science, Technology, and Society</option>
                     <option value="hci">Human-Computer Interaction</option>
-                    <option value="nstp">National Service Training Program</option>
+                    <option value="nstp">NSTP</option>
+                    <option value="intro_to_computing">Introduction to Computing</option>
                 </select>
             </div>
             <button id="start-btn" class="btn w-full max-w-xs mx-auto bg-blue-600 text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:bg-blue-700">Start Quiz</button>
         </div>
 
-        <!-- Quiz Screen -->
+       
         <div id="quiz-screen" class="card p-8 md:p-12 hidden">
             <div class="flex justify-between items-center mb-6">
                 <p id="question-counter" class="text-slate-600 font-medium">Question 1/50</p>
@@ -69,21 +70,21 @@
             </div>
             <h2 id="question-text" class="text-xl md:text-2xl font-semibold text-slate-800 mb-8 min-h-[100px]">Question text goes here...</h2>
             <div id="options-container" class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <!-- Option buttons will be inserted here -->
+                
             </div>
             <div class="mt-8 text-right">
                 <button id="next-btn" class="btn bg-slate-700 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-slate-800 hidden">Next</button>
             </div>
         </div>
 
-        <!-- Results Screen -->
+        
         <div id="results-screen" class="card p-8 md:p-12 text-center hidden">
             <i id="result-icon" class="fas fa-trophy text-6xl text-amber-400 mb-4"></i>
             <h1 class="text-3xl md:text-4xl font-bold text-slate-800 mb-2">Quiz Completed!</h1>
             <p id="final-score-text" class="text-2xl text-slate-600 mb-4">Your final score is 8 out of 10.</p>
             <p id="result-message" class="text-lg text-slate-500 mb-8">Great job! You have a solid understanding.</p>
             
-            <!-- Statistics Section -->
+            
             <div id="stats-container" class="mt-8 pt-6 border-t border-slate-200">
                 <h3 class="text-xl font-bold text-slate-700 mb-4">Quiz Statistics</h3>
                 <div class="flex justify-around text-center">
@@ -109,63 +110,60 @@
     <script>
         const quizData = {
             sts: [
-                // Module 1
+                
                 { question: "What does STS primarily study?", options: ["Scientific laws only", "How science and technology impact society", "Technological inventions only", "Pure science in laboratories"], answer: "How science and technology impact society" },
-                { question: "Which of the following describes science as an idea?", options: ["It includes the scientific method", "It is a body of knowledge", "It includes theories and explanations about the natural world", "It is a social and cultural activity"], answer: "It includes theories and explanations about the natural world" },
                 { question: "The nature of science suggests that scientific knowledge is:", options: ["Absolute and unchangeable", "Based on belief and faith", "Subject to change and revision based on new evidence", "A collection of opinions"], answer: "Subject to change and revision based on new evidence" },
-                { question: "An example of a negative impact of society on science is:", options: ["Funding for cancer research", "Public support for space exploration", "Ethical regulations on human cloning", "Ignoring scientific evidence for political reasons"], answer: "Ignoring scientific evidence for political reasons" },
                 { question: "STS as an academic field emerged primarily after which major global event?", options: ["The Renaissance", "The Industrial Revolution", "World War II", "The French Revolution"], answer: "World War II" },
-
-                // Module 2
                 { question: "Which historical period is known as the 'Age of Reason'?", options: ["The Renaissance", "The Industrial Revolution", "The Enlightenment", "The Middle Ages"], answer: "The Enlightenment" },
-                { question: "Which of the following is one of China's 'Four Great Inventions'?", options: ["The Wheel", "Papyrus", "Gunpowder", "The Aqueduct"], answer: "Gunpowder" },
                 { question: "Who is credited with inventing the printing press with movable type?", options: ["Leonardo da Vinci", "Galileo Galilei", "Johannes Gutenberg", "Isaac Newton"], answer: "Johannes Gutenberg" },
                 { question: "The Banaue Rice Terraces are an example of advanced indigenous technology from which era in the Philippines?", options: ["Spanish Colonial Era", "American Period", "Pre-Spanish Era", "Post-Independence"], answer: "Pre-Spanish Era" },
-                { question: "Which ancient civilization is credited with the development of papyrus?", options: ["Mesopotamia", "Greece", "Rome", "Egypt"], answer: "Egypt" },
                 { question: "The current era characterized by a fusion of digital, physical, and biological technologies is called:", options: ["The Information Age", "The Fourth Industrial Revolution", "The Atomic Age", "The Space Age"], answer: "The Fourth Industrial Revolution" },
-                { question: "What was the primary research center in the Philippines during the American Period?", options: ["DOST", "University of the Philippines", "Bureau of Science", "National Research Council of the Philippines"], answer: "Bureau of Science" },
-                { question: "Ayurveda is a traditional system of medicine that originated in which country?", options: ["China", "Japan", "India", "Egypt"], answer: "India" },
-                { question: "The Islamic Golden Age was known for significant advancements in which field?", options: ["Printing", "Steam engines", "Algebra and Optics", "Genetics"], answer: "Algebra and Optics" },
-                { question: "Dr. Fe Del Mundo, a Filipina scientist, is famous for inventing a:", options: ["Medical Incubator", "Videophone", "Karaoke Machine", "Moon Buggy"], answer: "Medical Incubator" },
-
-                // Module 3
                 { question: "The theory of evolution by natural selection was proposed by whom?", options: ["Nicolaus Copernicus", "Isaac Newton", "Charles Darwin", "Sigmund Freud"], answer: "Charles Darwin" },
                 { question: "The shift from a geocentric to a heliocentric model of the universe is known as which revolution?", options: ["Darwinian Revolution", "Freudian Revolution", "Copernican Revolution", "Industrial Revolution"], answer: "Copernican Revolution" },
                 { question: "Sigmund Freud's theory of psychoanalysis introduced the concept of the:", options: ["Conscious Mind", "Paradigm Shift", "Unconscious Mind", "Natural Selection"], answer: "Unconscious Mind" },
                 { question: "The term 'paradigm shift' was popularized by which philosopher of science?", options: ["Karl Popper", "Thomas Kuhn", "Francis Bacon", "Immanuel Kant"], answer: "Thomas Kuhn" },
-                { question: "The Ptolemaic model of the universe is also known as the:", options: ["Heliocentric Model", "Geocentric Model", "Elliptical Model", "Atomic Model"], answer: "Geocentric Model" },
-                { question: "The Maya, Aztec, and Inca civilizations were located in which region?", options: ["Mesoamerica", "The Middle East", "East Asia", "Sub-Saharan Africa"], answer: "Mesoamerica" },
                 { question: "The 'survival of the fittest' is a phrase that summarizes a key mechanism of:", options: ["Psychoanalysis", "Natural Selection", "Heliocentrism", "Relativity"], answer: "Natural Selection" },
-                { question: "Which of these concepts is central to the Freudian Revolution?", options: ["The Earth revolves around the Sun", "Species evolve over time", "Human behavior is influenced by the unconscious mind", "Energy and mass are equivalent"], answer: "Human behavior is influenced by the unconscious mind" },
                 { question: "Acupuncture is a traditional medical practice that originated in:", options: ["India", "Japan", "China", "Korea"], answer: "China" },
-                { question: "Who challenged the Ptolemaic model by proposing a Sun-centered universe?", options: ["Galileo Galilei", "Johannes Kepler", "Isaac Newton", "Nicolaus Copernicus"], answer: "Nicolaus Copernicus" },
-
-                // Module 4
-                { question: "What does DOST stand for in the Philippines?", options: ["Department of Science and Training", "Department of Social Technology", "Department of Science and Technology", "Division of Scientific Treatises"], answer: "Department of Science and Technology" },
                 { question: "A key role of S&T in nation-building is to:", options: ["Preserve traditional beliefs", "Drive economic growth and innovation", "Increase military power exclusively", "Maintain the status quo"], answer: "Drive economic growth and innovation" },
                 { question: "The Philippine government's 'Balik Scientist Program' aims to:", options: ["Fund research for local scientists only", "Encourage Filipino scientists abroad to return", "Provide scholarships for science students", "Establish new science high schools"], answer: "Encourage Filipino scientists abroad to return" },
                 { question: "Project NOAH (Nationwide Operational Assessment of Hazards) is a program for:", options: ["Agricultural development", "Space exploration", "Disaster risk reduction and management", "Marine conservation"], answer: "Disaster risk reduction and management" },
-                { question: "The Magna Carta for Scientists in the Philippines aims to:", options: ["Regulate scientific publications", "Provide benefits and support for scientists", "Set ethical standards for research", "Fund international collaborations"], answer: "Provide benefits and support for scientists" },
-                { question: "Dr. Jose Rizal was a prominent scientist and engineer during which period of Philippine history?", options: ["Pre-Spanish Era", "Spanish Colonial Era", "American Period", "Japanese Occupation"], answer: "Spanish Colonial Era" },
-
-                // Mixed Review
                 { question: "The first Industrial Revolution was powered by what invention?", options: ["The internal combustion engine", "The semiconductor", "The steam engine", "The nuclear reactor"], answer: "The steam engine" },
                 { question: "Who is considered the 'Father of Optics' for his work during the Islamic Golden Age?", options: ["Avicenna", "Al-Khwarizmi", "Ibn al-Haytham", "Al-Biruni"], answer: "Ibn al-Haytham" },
                 { question: "The word 'science' is derived from the Latin word 'scientia,' meaning:", options: ["To invent", "To discover", "Knowledge", "Nature"], answer: "Knowledge" },
-                { question: "Which part of the mind did Freud say operates on the 'pleasure principle'?", options: ["The Ego", "The Superego", "The Id", "The Conscience"], answer: "The Id" },
                 { question: "The Diwata-1 and Diwata-2 are examples of Philippine:", options: ["Weather balloons", "Research vessels", "Microsatellites", "Geothermal plants"], answer: "Microsatellites" },
-                { question: "'On the Origin of Species' is the groundbreaking book written by:", options: ["Isaac Newton", "Albert Einstein", "Charles Darwin", "Gregor Mendel"], answer: "Charles Darwin" },
-                { question: "Which ancient Greek philosopher was a major proponent of the geocentric model?", options: ["Aristotle", "Democritus", "Pythagoras", "Archimedes"], answer: "Aristotle" },
                 { question: "The practical application of scientific knowledge for human purposes is called:", options: ["Philosophy", "Society", "Technology", "Ideology"], answer: "Technology" },
+                { question: "What does 'Filipinnovation' refer to?", options: ["A government agency", "A brand for the Philippines as an innovation hub", "A scientific journal", "A national science fair"], answer: "A brand for the Philippines as an innovation hub" },
+                 { question: "Which of the following is one of China's 'Four Great Inventions'?", options: ["The Wheel", "Papyrus", "Gunpowder", "The Aqueduct"], answer: "Gunpowder" },
+                { question: "Which ancient civilization is credited with the development of papyrus?", options: ["Mesopotamia", "Greece", "Rome", "Egypt"], answer: "Egypt" },
+                { question: "What was the primary research center in the Philippines during the American Period?", options: ["DOST", "University of the Philippines", "Bureau of Science", "National Research Council of the Philippines"], answer: "Bureau of Science" },
+                { question: "Ayurveda is a traditional system of medicine that originated in which country?", options: ["China", "Japan", "India", "Egypt"], answer: "India" },
+                { question: "Dr. Fe Del Mundo, a Filipina scientist, is famous for inventing a:", options: ["Medical Incubator", "Videophone", "Karaoke Machine", "Moon Buggy"], answer: "Medical Incubator" },
+                { question: "The Ptolemaic model of the universe is also known as the:", options: ["Heliocentric Model", "Geocentric Model", "Elliptical Model", "Atomic Model"], answer: "Geocentric Model" },
+                { question: "The Maya, Aztec, and Inca civilizations were located in which region?", options: ["Mesoamerica", "The Middle East", "East Asia", "Sub-Saharan Africa"], answer: "Mesoamerica" },
+                 { question: "Who challenged the Ptolemaic model by proposing a Sun-centered universe?", options: ["Galileo Galilei", "Johannes Kepler", "Isaac Newton", "Nicolaus Copernicus"], answer: "Nicolaus Copernicus" },
+                { question: "What does DOST stand for in the Philippines?", options: ["Department of Science and Training", "Department of Social Technology", "Department of Science and Technology", "Division of Scientific Treatises"], answer: "Department of Science and Technology" },
+                { question: "The Magna Carta for Scientists in the Philippines aims to:", options: ["Regulate scientific publications", "Provide benefits and support for scientists", "Set ethical standards for research", "Fund international collaborations"], answer: "Provide benefits and support for scientists" },
+                { question: "Dr. Jose Rizal was a prominent scientist and engineer during which period of Philippine history?", options: ["Pre-Spanish Era", "Spanish Colonial Era", "American Period", "Japanese Occupation"], answer: "Spanish Colonial Era" },
+                { question: "Which part of the mind did Freud say operates on the 'pleasure principle'?", options: ["The Ego", "The Superego", "The Id", "The Conscience"], answer: "The Id" },
+                { question: "'On the Origin of Species' is the groundbreaking book written by:", options: ["Isaac Newton", "Albert Einstein", "Charles Darwin", "Gregor Mendel"], answer: "Charles Darwin" },
                 { question: "Gregorio Zara, a Filipino scientist, is known for inventing the:", options: ["Erythromycin", "Medical Incubator", "Videophone", "Banana Ketchup"], answer: "Videophone" },
                 { question: "The development of Cuneiform, the first system of writing, is credited to which civilization?", options: ["Egyptians", "Greeks", "Mesopotamians", "Chinese"], answer: "Mesopotamians" },
                 { question: "The theory of relativity, including the equation E=mc², was developed by:", options: ["Isaac Newton", "Albert Einstein", "Niels Bohr", "Max Planck"], answer: "Albert Einstein" },
-                { question: "What does 'Filipinnovation' refer to?", options: ["A government agency", "A brand for the Philippines as an innovation hub", "A scientific journal", "A national science fair"], answer: "A brand for the Philippines as an innovation hub" },
                 { question: "The invention of the compass was a major contribution from which civilization?", options: ["Ancient Rome", "Ancient Greece", "Ancient China", "Ancient India"], answer: "Ancient China" },
-                { question: "The primary focus of the Darwinian revolution was on:", options: ["The laws of physics", "The structure of the atom", "The study of the mind", "Biological evolution"], answer: "Biological evolution" }
+                { question: "The primary focus of the Darwinian revolution was on:", options: ["The laws of physics", "The structure of the atom", "The study of the mind", "Biological evolution"], answer: "Biological evolution" },
+                { question: "The term for a state that breaks established international rules is:", options: ["A developed state", "A rogue state", "A failed state", "An allied state"], answer: "A rogue state" },
+                { question: "Which UN organ is considered the main deliberative and policymaking body?", options: ["Security Council", "General Assembly", "Secretariat", "International Court of Justice"], answer: "General Assembly" },
+                { question: "How many permanent members are in the UN Security Council?", options: ["15", "10", "5", "193"], answer: "5" },
+                { question: "What is the primary role of the International Court of Justice (ICJ)?", options: ["To prosecute individuals for war crimes", "To settle legal disputes between states", "To create international laws", "To manage the UN budget"], answer: "To settle legal disputes between states" },
+                { question: "Global governance primarily relies on the cooperation of:", options: ["States and IGOs only", "Corporations and NGOs", "States, IGOs, and transnational actors", "The UN Security Council alone"], answer: "States, IGOs, and transnational actors" },
+                { question: "Which UN organ has its operations currently suspended?", options: ["Economic and Social Council", "Secretariat", "Trusteeship Council", "General Assembly"], answer: "Trusteeship Council" },
+                { question: "A pandemic like COVID-19 is considered what kind of challenge to global governance?", options: ["A political challenge", "An economic challenge", "A health and environmental challenge", "A military challenge"], answer: "A health and environmental challenge" },
+                { question: "The head of the UN Secretariat is known as the:", options: ["President", "Chief Administrative Officer", "Secretary-General", "Director"], answer: "Secretary-General" },
+                { question: "Which of the following is a primary purpose of the UN?", options: ["To regulate global trade", "To act as a center for harmonizing the actions of nations", "To create a single world government", "To control the world's currency"], answer: "To act as a center for harmonizing the actions of nations" },
+                { question: "The rapid and dramatic rise in the world population is known as:", options: ["Population density", "Urbanization", "Population explosion", "Migration"], answer: "Population explosion" }
             ],
             hci: [
-                // Module 1
+                
                 { question: "What does HCI stand for?", options: ["Human-Computer Interaction", "Human-Computer Interface", "Human-Centered Integration", "Highly-Complex Interaction"], answer: "Human-Computer Interaction" },
                 { question: "The design principle of providing information about what action has been done is called:", options: ["Visibility", "Constraint", "Feedback", "Affordance"], answer: "Feedback" },
                 { question: "Which of the following is a subjective 'User Experience Goal'?", options: ["Learnability", "Effectiveness", "Enjoyable", "Efficiency"], answer: "Enjoyable" },
@@ -174,46 +172,51 @@
                 { question: "Which of these is a key usability goal?", options: ["Engaging", "Aesthetically pleasing", "Safety", "Fun"], answer: "Safety" },
                 { question: "The principle of designing interfaces to have similar operations for similar tasks is:", options: ["Affordance", "Consistency", "Visibility", "Feedback"], answer: "Consistency" },
                 { question: "Inclusiveness in design means designing for:", options: ["The 'average' user", "Expert users only", "The widest possible range of people", "A specific niche market"], answer: "The widest possible range of people" },
-                { question: "What is the difference between usability and user experience?", options: ["They are the same thing", "Usability is about function, UX is about feelings", "Usability is a part of the overall user experience", "Usability is for hardware, UX is for software"], answer: "Usability is a part of the overall user experience" },
                 { question: "Making relevant parts of an interface apparent is an example of:", options: ["Visibility", "Feedback", "Constraint", "Simplicity"], answer: "Visibility" },
-
-                // Module 2
                 { question: "A design philosophy that places the user at the center of the process is known as:", options: ["Technology-Centered Design", "User-Centered Design", "Agile Design", "System-Centered Design"], answer: "User-Centered Design" },
                 { question: "In the Double Diamond of Design, what are the four phases?", options: ["Plan, Design, Build, Test", "Discover, Define, Develop, Deliver", "Research, Ideate, Prototype, Launch", "Think, Make, Check, Act"], answer: "Discover, Define, Develop, Deliver" },
-                { question: "The 'Discover' phase of the Double Diamond model is a period of:", options: ["Convergent thinking", "Divergent thinking", "Prototyping", "Finalizing design"], answer: "Divergent thinking" },
                 { question: "Which of these is NOT a principle of User-Centered Design?", options: ["Early focus on users and tasks", "Iterative design", "Empirical measurement", "Prioritizing technical features over user needs"], answer: "Prioritizing technical features over user needs" },
                 { question: "A low-fidelity paper sketch of an interface is a form of:", options: ["Conceptual Model", "Prototype", "Mental Model", "Final Product"], answer: "Prototype" },
-                { question: "What is the main purpose of the 'Define' phase in the Double Diamond model?", options: ["To brainstorm as many ideas as possible", "To build the final product", "To frame a clear problem statement", "To test the product with users"], answer: "To frame a clear problem statement" },
                 { question: "The cyclical process of building, testing, and refining a design is called:", options: ["Linear development", "Iteration", "Conceptualization", "Requirement gathering"], answer: "Iteration" },
                 { question: "Which of the four basic activities of interaction design involves understanding user needs?", options: ["Prototyping", "Evaluating", "Designing Alternatives", "Discovering Requirements"], answer: "Discovering Requirements" },
-                { question: "In the Double Diamond model, the 'Develop' phase involves:", options: ["Narrowing down to one final idea", "Researching the problem space", "Creating and testing multiple potential solutions", "Launching the product"], answer: "Creating and testing multiple potential solutions" },
-                { question: "Involving users in the design process helps to:", options: ["Increase development costs", "Ensure the product meets their needs", "Slow down the entire process", "Focus only on the designer's vision"], answer: "Ensure the product meets their needs" },
-
-                // Module 3
                 { question: "A user's internal representation of how a system works is called a:", options: ["Conceptual Model", "Interaction Type", "Mental Model", "Cognitive Framework"], answer: "Mental Model" },
                 { question: "Graying out an unavailable menu option is an example of which design principle?", options: ["Feedback", "Constraint", "Visibility", "Consistency"], answer: "Constraint" },
                 { question: "Using a 'shopping cart' on an e-commerce site is an example of an:", options: ["Interface Metaphor", "Interaction Type", "Usability Goal", "External Cognition"], answer: "Interface Metaphor" },
                 { question: "Which interaction type involves interacting with a system as if having a conversation?", options: ["Instructing", "Manipulating", "Exploring", "Conversing"], answer: "Conversing" },
                 { question: "A high-level description of how a system is organized and operates is a:", options: ["Mental Model", "Prototype", "Conceptual Model", "User flow"], answer: "Conceptual Model" },
                 { question: "Dragging and dropping a file is an example of which interaction type?", options: ["Conversing", "Instructing", "Exploring", "Manipulating"], answer: "Manipulating" },
-                { question: "The main purpose of a conceptual model is to:", options: ["Provide a detailed technical specification", "Establish a common ground for the design team", "Act as a marketing document", "List all the features of the product"], answer: "Establish a common ground for the design team" },
-                { question: "What is a potential downside of interface metaphors?", options: ["They are always too complex", "They can limit designers' creativity", "They are not understood by users", "They cannot be used on mobile devices"], answer: "They can limit designers' creativity" },
-                { question: "Issuing commands via a command line is which interaction type?", options: ["Conversing", "Instructing", "Manipulating", "Exploring"], answer: "Instructing" },
-                { question: "Navigating a 3D virtual environment is an example of:", options: ["Exploring", "Instructing", "Conversing", "Manipulating"], answer: "Exploring" },
-                
-                // Module 4
                 { question: "The 'Gulf of Execution' refers to the gap between:", options: ["The system's state and the user's understanding of it", "The user's goal and the actions required to achieve it", "The designer's idea and the final product", "The user's expectation and the system's performance"], answer: "The user's goal and the actions required to achieve it" },
                 { question: "Which cognitive process is concerned with selecting things to concentrate on?", options: ["Memory", "Perception", "Attention", "Learning"], answer: "Attention" },
                 { question: "Using a to-do list to offload the mental work of remembering is an example of:", options: ["Mental Model", "External Cognition", "Perception", "Attention"], answer: "External Cognition" },
                 { question: "The 'Gulf of Evaluation' can be bridged by providing good:", options: ["Affordances", "Constraints", "Feedback and Visibility", "Consistency"], answer: "Feedback and Visibility" },
                 { question: "Why is 'recognition over recall' a good principle for designing for memory?", options: ["It is easier for people to recognize than to recall", "It makes the interface more colorful", "It is faster to code", "It works better on small screens"], answer: "It is easier for people to recognize than to recall" },
                 { question: "A mismatch between the system's design and a user's mental model often leads to:", options: ["Faster task completion", "User errors and frustration", "A more engaging experience", "Higher user satisfaction"], answer: "User errors and frustration" },
-                { question: "Cognitive frameworks are used in HCI to:", options: ["Write code for the user interface", "Understand and explain user interaction", "Market the product", "Test system hardware"], answer: "Understand and explain user interaction" },
                 { question: "How information is acquired from the environment via the senses is called:", options: ["Attention", "Memory", "Perception", "Cognition"], answer: "Perception" },
+                { question: "Which term describes how a person feels when using a product, including their perceptions of usability and pleasure?", options: ["Interaction Design", "User Experience (UX)", "Accessibility", "Human-Computer Interaction (HCI)"], answer: "User Experience (UX)" },
+                { question: "Which usability goal refers to how easy a system is to learn to use?", options: ["Effectiveness", "Efficiency", "Learnability", "Memorability"], answer: "Learnability" },
+                { question: "What is the primary goal of prototyping in the interaction design process?", options: ["To create the final, polished product", "To test and evaluate design ideas with users", "To write the complete code for the system", "To market the product to investors"], answer: "To test and evaluate design ideas with users" },
+                { question: "The first phase of the Double Diamond of Design, 'Discover', involves what kind of thinking?", options: ["Convergent thinking to narrow down ideas", "Divergent thinking to explore possibilities", "Evaluative thinking to test prototypes", "Finalizing the design specification"], answer: "Divergent thinking to explore possibilities" },
+                { question: "An interface metaphor's primary purpose is to:", options: ["Make the interface look more modern", "Leverage familiar knowledge to help users understand", "Restrict what users can do", "Provide direct manipulation of objects"], answer: "Leverage familiar knowledge to help users understand" },
+                { question: "Which part of cognition involves recalling information that has been stored?", options: ["Perception", "Attention", "Learning", "Memory"], answer: "Memory" },
+                { question: "Don Norman's model of interaction includes the 'Gulf of Execution' and the 'Gulf of...'", options: ["Understanding", "Evaluation", "Interaction", "Design"], answer: "Evaluation" },
+                { question: "The cognitive process of interpreting sensory information to understand the environment is:", options: ["Perception", "Attention", "Memory", "Learning"], answer: "Perception" },
+                { question: "When a designer restricts possible actions to prevent errors, they are using:", options: ["Feedback", "Affordance", "Constraints", "Visibility"], answer: "Constraints" },
+                { question: "The user-centered design approach emphasizes:", options: ["The designer's personal preferences", "The latest technology available", "The needs and goals of the end-user", "The business's marketing strategy"], answer: "The needs and goals of the end-user" },
+                { question: "What is the main purpose of the 'Define' phase in the Double Diamond model?", options: ["To brainstorm as many ideas as possible", "To build the final product", "To frame a clear problem statement", "To test the product with users"], answer: "To frame a clear problem statement" },
+                { question: "Involving users in the design process helps to:", options: ["Increase development costs", "Ensure the product meets their needs", "Slow down the entire process", "Focus only on the designer's vision"], answer: "Ensure the product meets their needs" },
+                { question: "What is a potential downside of interface metaphors?", options: ["They are always too complex", "They can limit designers' creativity", "They are not understood by users", "They cannot be used on mobile devices"], answer: "They can limit designers' creativity" },
+                { question: "Issuing commands via a command line is which interaction type?", options: ["Conversing", "Instructing", "Manipulating", "Exploring"], answer: "Instructing" },
+                { question: "Navigating a 3D virtual environment is an example of:", options: ["Exploring", "Instructing", "Conversing", "Manipulating"], answer: "Exploring" },
+                { question: "Cognitive frameworks are used in HCI to:", options: ["Write code for the user interface", "Understand and explain user interaction", "Market the product", "Test system hardware"], answer: "Understand and explain user interaction" },
                 { question: "The ability to multitask effectively is limited by our:", options: ["Memory capacity", "Perceptual filters", "Attentional resources", "Motor skills"], answer: "Attentional resources" },
-                { question: "Well-designed interfaces that act as reminders or guides are examples of technology supporting:", options: ["Mental models", "Internal cognition", "External cognition", "Direct manipulation"], answer: "External cognition" }
+                { question: "Well-designed interfaces that act as reminders or guides are examples of technology supporting:", options: ["Mental models", "Internal cognition", "External cognition", "Direct manipulation"], answer: "External cognition" },
+                { question: "The 'Discover' phase of the Double Diamond model is a period of:", options: ["Convergent thinking", "Divergent thinking", "Prototyping", "Finalizing design"], answer: "Divergent thinking" },
+                { question: "What is the difference between usability and user experience?", options: ["They are the same thing", "Usability is about function, UX is about feelings", "Usability is a part of the overall user experience", "Usability is for hardware, UX is for software"], answer: "Usability is a part of the overall user experience" },
+                { question: "In the Double Diamond model, the 'Develop' phase involves:", options: ["Narrowing down to one final idea", "Researching the problem space", "Creating and testing multiple potential solutions", "Launching the product"], answer: "Creating and testing multiple potential solutions" },
+                { question: "The main purpose of a conceptual model is to:", options: ["Provide a detailed technical specification", "Establish a common ground for the design team", "Act as a marketing document", "List all the features of the product"], answer: "Establish a common ground for the design team" }
             ],
             nstp: [
+                
                 { question: "What Republic Act established the National Service Training Program (NSTP)?", options: ["RA 8491", "RA 10121", "RA 9163", "RA 9003"], answer: "RA 9163" },
                 { question: "Which is NOT one of the three components of NSTP?", options: ["ROTC", "LTS", "CWTS", "NSRC"], answer: "NSRC" },
                 { question: "Which NSTP component is designed to provide military training for national defense preparedness?", options: ["LTS", "CWTS", "ROTC", "All of the above"], answer: "ROTC" },
@@ -264,6 +267,59 @@
                 { question: "The concept of 'servant leadership' prioritizes:", options: ["The leader's authority", "The organization's profits", "The needs of others", "The leader's personal success"], answer: "The needs of others" },
                 { question: "The preamble of the constitution is an introductory statement that outlines the ____ of the government.", options: ["History and structure", "Powers and limitations", "Principles and purposes", "List of officials"], answer: "Principles and purposes" },
                 { question: "Which program component of NSTP did the ROTC program replace for those who do not wish to join the military?", options: ["LTS and CWTS", "NSRC and LTS", "Only CWTS", "Only LTS"], answer: "LTS and CWTS" }
+            ],
+            intro_to_computing: [
+                 
+                { question: "Which of the following is NOT one of the five main components of a computer?", options: ["Input Devices", "Output Devices", "System Unit", "Application Software"], answer: "Application Software" },
+                { question: "A keyboard and a mouse are examples of what type of device?", options: ["Output", "Storage", "Input", "Communication"], answer: "Input" },
+                { question: "The main circuit board of the system unit is the:", options: ["CPU", "RAM", "Motherboard", "Hard Drive"], answer: "Motherboard" },
+                { question: "A worldwide collection of networks that links millions of businesses, government agencies, and individuals is called:", options: ["The World Wide Web", "An ISP", "The Internet", "A LAN"], answer: "The Internet" },
+                { question: "System software and application software are the two main categories of computer:", options: ["Hardware", "Networks", "Software", "Processors"], answer: "Software" },
+                { question: "Which type of computer is designed to be portable and can fit on your lap?", options: ["Server", "Mainframe", "Desktop Computer", "Laptop/Notebook Computer"], answer: "Laptop/Notebook Computer" },
+                { question: "Supercomputers are primarily used for:", options: ["Personal banking", "Playing games", "Complex, sophisticated applications like weather forecasting", "Word processing"], answer: "Complex, sophisticated applications like weather forecasting" },
+                { question: "The two main components of the CPU are the Control Unit and the ____.", options: ["RAM", "Motherboard", "ALU (Arithmetic Logic Unit)", "Cache"], answer: "ALU (Arithmetic Logic Unit)" },
+                { question: "Which of the following is an example of an output device?", options: ["Scanner", "Microphone", "Printer", "Webcam"], answer: "Printer" },
+                { question: "What does RAM stand for?", options: ["Read-Only Memory", "Random Access Memory", "Real-time Access Memory", "Remote Application Memory"], answer: "Random Access Memory" },
+                { question: "What is the smallest unit of data a computer can process?", options: ["Byte", "Bit", "Kilobyte", "Gigabyte"], answer: "Bit" },
+                { question: "How many bits make up one byte?", options: ["1", "4", "8", "16"], answer: "8" },
+                { question: "Which type of memory loses its contents when the computer's power is turned off?", options: ["ROM", "Flash Memory", "RAM", "Cache"], answer: "RAM" },
+                { question: "A network that covers a limited geographical area, such as a school or office, is called a:", options: ["WAN", "MAN", "LAN", "PAN"], answer: "LAN" },
+                { question: "The set of rules that governs communication between computers on a network is called a:", options: ["Protocol", "Topology", "Firewall", "Server"], answer: "Protocol" },
+                { question: "A program that allows you to access and view webpages, such as Chrome or Firefox, is called a:", options: ["Search Engine", "Web Server", "Web Browser", "Homepage"], answer: "Web Browser" },
+                { question: "What does 'WWW' stand for?", options: ["Wide World Web", "World Wide Web", "Web World Wide", "Worldwide Website"], answer: "World Wide Web" },
+                { question: "Which of the following is a popular search engine?", options: ["Microsoft Word", "Google", "Adobe Photoshop", "Facebook"], answer: "Google" },
+                { question: "Buying and selling goods over the Internet is known as:", options: ["E-mail", "E-commerce", "Netiquette", "FTP"], answer: "E-commerce" },
+                { question: "The code of acceptable behaviors users should follow while on the Internet is called:", options: ["Internet Law", "Cybersecurity", "Netiquette", "Protocol"], answer: "Netiquette" },
+                { question: "Which type of software consists of programs designed to make users more productive?", options: ["System Software", "Utility Software", "Application Software", "Operating System"], answer: "Application Software" },
+                { question: "Word processing, spreadsheet, and presentation software are examples of what category of software?", options: ["Business Software", "Graphics Software", "Communication Software", "Utility Software"], answer: "Business Software" },
+                { question: "Which application is best suited for creating letters, reports, and other text-based documents?", options: ["Spreadsheet", "Database", "Word Processing", "Presentation"], answer: "Word Processing" },
+                { question: "Microsoft Excel or Google Sheets are examples of which type of software?", options: ["Word Processing", "Spreadsheet", "Presentation", "Database"], answer: "Spreadsheet" },
+                { question: "A collection of data organized in a manner that allows access, retrieval, and use of that data is a:", options: ["Spreadsheet", "Document", "Database", "Slide show"], answer: "Database" },
+                { question: "Software provided for use, modification, and redistribution at no cost is called:", options: ["Shareware", "Freeware", "Open Source Software", "Packaged Software"], answer: "Open Source Software" },
+                { question: "What is the primary function of an operating system?", options: ["To browse the internet", "To manage the computer's hardware and software resources", "To create documents", "To protect against viruses"], answer: "To manage the computer's hardware and software resources" },
+                { question: "A small program that tells the operating system how to communicate with a specific device is called a:", options: ["Utility", "Compiler", "Driver", "Spooler"], answer: "Driver" },
+                { question: "Which of the following is an example of an operating system?", options: ["Microsoft Office", "Windows 11", "Adobe Photoshop", "Google Chrome"], answer: "Windows 11" },
+                { question: "A software application for retrieving, presenting, and traversing information resources on the World Wide Web is a:", options: ["Search Engine", "Web Browser", "Web Server", "ISP"], answer: "Web Browser" },
+                { question: "The case that contains and protects the motherboard, hard disk drive, and other electronic components is the:", options: ["CPU", "System Unit", "RAM", "Adapter Card"], answer: "System Unit" },
+                { question: "The processor, memory, and storage devices are housed in a box-like case called the:", options: ["System Unit", "CPU", "Motherboard", "Bus"], answer: "System Unit" },
+                { question: "What does CPU stand for?", options: ["Central Processing Unit", "Computer Processing Unit", "Central Program Unit", "Computer Program Unit"], answer: "Central Processing Unit" },
+                { question: "The component of the processor that directs and coordinates most of the operations in the computer is the:", options: ["ALU", "Register", "Control Unit", "Cache"], answer: "Control Unit" },
+                { question: "The four basic operations of a processor (fetching, decoding, executing, and storing) are collectively called a:", options: ["System Clock", "Bus Cycle", "Machine Cycle", "Instruction Set"], answer: "Machine Cycle" },
+                { question: "The binary system uses which two digits?", options: ["0 and 1", "1 and 2", "A and B", "On and Off"], answer: "0 and 1" },
+                { question: "ASCII is an example of a:", options: ["Memory chip", "Coding scheme for representing data", "Type of processor", "Port"], answer: "Coding scheme for representing data" },
+                { question: "Which type of memory is nonvolatile, meaning its contents are not lost when power is removed?", options: ["RAM", "Cache", "Virtual Memory", "ROM"], answer: "ROM" },
+                { question: "A temporary storage area that helps speed up computer processes by storing frequently used instructions is:", options: ["RAM", "ROM", "Flash Memory", "Cache"], answer: "Cache" },
+                { question: "A USB port is a common way to connect devices to a computer. What does USB stand for?", options: ["Universal Serial Bus", "Unified System Bus", "Universal System Block", "Unified Serial Block"], answer: "Universal Serial Bus" },
+                { question: "The channel that allows various devices inside and attached to the system unit to communicate with each other is the:", options: ["Port", "Bus", "Bay", "Slot"], answer: "Bus" },
+                { question: "Which of the following is a type of optical disc?", options: ["Hard disk", "USB flash drive", "DVD", "Memory card"], answer: "DVD" },
+                { question: "A collection of related web pages is called a:", options: ["Website", "Homepage", "Search Engine", "Web Server"], answer: "Website" },
+                { question: "The process of a computer receiving information from a server on the Internet is known as:", options: ["Uploading", "Downloading", "Streaming", "Browsing"], answer: "Downloading" },
+                { question: "Software that performs functions specific to a business or industry is called:", options: ["Custom Software", "Packaged Software", "Shareware", "Freeware"], answer: "Custom Software" },
+                { question: "Which component of the CPU performs arithmetic, comparison, and other operations?", options: ["Control Unit", "Register", "Bus Interface Unit", "Arithmetic Logic Unit (ALU)"], answer: "Arithmetic Logic Unit (ALU)" },
+                { question: "A unique address for a webpage is called a:", options: ["IP Address", "Homepage", "URL (Uniform Resource Locator)", "Protocol"], answer: "URL (Uniform Resource Locator)" },
+                { question: "The main page of a website is called the:", options: ["Index page", "Homepage", "Directory", "Root"], answer: "Homepage" },
+                { question: "Which of these is a utility program?", options: ["Word Processor", "Web Browser", "File Manager", "Spreadsheet"], answer: "File Manager" },
+                { question: "A 'Wizard' in a software application is a:", options: ["Security feature", "Help file", "Step-by-step guide for a task", "Programming tool"], answer: "Step-by-step guide for a task" }
             ]
         };
 
@@ -362,12 +418,12 @@
                 isCorrect: isCorrect
             });
 
-            // Highlight the correct answer
+         
             Array.from(optionsContainer.children).forEach(btn => {
                 if (btn.textContent === currentQuestion.answer) {
                     btn.classList.add('correct');
                 }
-                btn.disabled = true; // Disable all options
+                btn.disabled = true;
             });
             
             updateScoreDisplay();
@@ -434,6 +490,4 @@
     </script>
 </body>
 </html>
-
-
 
