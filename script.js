@@ -1,5 +1,6 @@
 const quizData = {
     sts: [ // Keep existing STS questions here
+        // ... (STS questions from previous interaction)
         { question: "What does the Latin word 'scientia,' from which 'science' is derived, mean?", options: ["To invent", "To discover", "Knowledge", "Nature"], answer: "Knowledge" },
         { question: "Which concept refers to a systematic activity of organizing knowledge about the universe through observation and experimentation?", options: ["Technology", "Society", "Science", "Philosophy"], answer: "Science" },
         { question: "Which of the following is NOT a primary characteristic of science?", options: ["It demands evidence", "It is a complex social activity", "It provides complete answers to all questions", "Scientific ideas are open to change"], answer: "It provides complete answers to all questions" },
@@ -52,7 +53,8 @@ const quizData = {
         { question: "Acupuncture is a traditional medical practice that originated in:", options: ["India", "Japan", "China", "Korea"], answer: "China" }
     ],
     hci: [ // Keep existing HCI questions here
-        { question: "What does HCI stand for?", options: ["Human-Computer Interaction", "Human-Computer Interface", "Human-Centered Integration", "Highly-Complex Interaction"], answer: "Human-Computer Interaction" },
+        // ... (HCI questions from previous interaction)
+         { question: "What does HCI stand for?", options: ["Human-Computer Interaction", "Human-Computer Interface", "Human-Centered Integration", "Highly-Complex Interaction"], answer: "Human-Computer Interaction" },
         { question: "The design principle of providing information about what action has been done is called:", options: ["Visibility", "Constraint", "Feedback", "Affordance"], answer: "Feedback" },
         { question: "Which of the following is a subjective 'User Experience Goal'?", options: ["Learnability", "Effectiveness", "Enjoyable", "Efficiency"], answer: "Enjoyable" },
         { question: "A button on a website that looks 'clickable' is an example of a perceived:", options: ["Constraint", "Feedback", "Affordance", "Mental Model"], answer: "Affordance" },
@@ -104,7 +106,8 @@ const quizData = {
         { question: "The main purpose of a conceptual model is to:", options: ["Provide a detailed technical specification", "Establish a common ground for the design team", "Act as a marketing document", "List all the features of the product"], answer: "Establish a common ground for the design team" }
     ],
     nstp: [ // Keep existing NSTP questions here
-        { question: "What Republic Act established the National Service Training Program (NSTP)?", options: ["RA 8491", "RA 10121", "RA 9163", "RA 9003"], answer: "RA 9163" },
+        // ... (NSTP questions from previous interaction)
+         { question: "What Republic Act established the National Service Training Program (NSTP)?", options: ["RA 8491", "RA 10121", "RA 9163", "RA 9003"], answer: "RA 9163" },
         { question: "Which is NOT one of the three components of NSTP?", options: ["ROTC", "LTS", "CWTS", "NSRC"], answer: "NSRC" },
         { question: "Which NSTP component is designed to provide military training for national defense preparedness?", options: ["LTS", "CWTS", "ROTC", "All of the above"], answer: "ROTC" },
         { question: "The Literacy Training Service (LTS) component focuses on training students to teach:", options: ["Military tactics", "Literacy and numeracy skills", "Disaster response", "Environmental protection"], answer: "Literacy and numeracy skills" },
@@ -156,7 +159,8 @@ const quizData = {
         { question: "Which program component of NSTP did the ROTC program replace for those who do not wish to join the military?", options: ["LTS and CWTS", "NSRC and LTS", "Only CWTS", "Only LTS"], answer: "LTS and CWTS" }
     ],
     intro_to_computing: [ // Keep existing Intro to Computing questions here
-        { question: "Which of the following is NOT one of the five main components of a computer?", options: ["Input Devices", "Output Devices", "System Unit", "Application Software"], answer: "Application Software" },
+        // ... (Intro to Computing questions from previous interaction)
+         { question: "Which of the following is NOT one of the five main components of a computer?", options: ["Input Devices", "Output Devices", "System Unit", "Application Software"], answer: "Application Software" },
         { question: "A keyboard and a mouse are examples of what type of device?", options: ["Output", "Storage", "Input", "Communication"], answer: "Input" },
         { question: "The main circuit board of the system unit is the:", options: ["CPU", "RAM", "Motherboard", "Hard Drive"], answer: "Motherboard" },
         { question: "A worldwide collection of networks that links millions of businesses, government agencies, and individuals is called:", options: ["The World Wide Web", "An ISP", "The Internet", "A LAN"], answer: "The Internet" },
@@ -207,8 +211,9 @@ const quizData = {
         { question: "Which of these is a utility program?", options: ["Word Processor", "Web Browser", "File Manager", "Spreadsheet"], answer: "File Manager" },
         { question: "A 'Wizard' in a software application is a:", options: ["Security feature", "Help file", "Step-by-step guide for a task", "Programming tool"], answer: "Step-by-step guide for a task" }
     ],
-    mmw: [ // Added MMW questions
-        { question: "Which term describes an arrangement that helps observers anticipate, model, and understand reality?", options: ["Sequence", "Pattern", "Ratio", "Symmetry"], answer: "Pattern" },
+    mmw: [ // Keep existing MMW questions here
+        // ... (MMW questions from previous interaction)
+         { question: "Which term describes an arrangement that helps observers anticipate, model, and understand reality?", options: ["Sequence", "Pattern", "Ratio", "Symmetry"], answer: "Pattern" },
         { question: "What type of pattern involves classifying objects based on characteristics or order, often seen in aptitude tests?", options: ["Number Patterns", "Logic Patterns", "Geometric Patterns", "Word Patterns"], answer: "Logic Patterns" },
         { question: "A sequence formed by adding or subtracting a constant value is called:", options: ["Geometric Sequence", "Fibonacci Sequence", "Arithmetic Sequence", "Quadratic Sequence"], answer: "Arithmetic Sequence" },
         { question: "What is the common difference in the arithmetic sequence 1, 3, 5, 7, 9?", options: ["1", "2", "3", "4"], answer: "2" },
@@ -257,8 +262,62 @@ const quizData = {
         { question: "What does a correlation coefficient (r) close to +1 indicate?", options: ["Strong negative linear relationship", "Weak negative linear relationship", "Strong positive linear relationship", "No linear relationship"], answer: "Strong positive linear relationship" },
         { question: "Linear regression aims to find the:", options: ["Correlation coefficient", "Standard deviation", "Line of best fit for the data", "Median of the data"], answer: "Line of best fit for the data" },
         { question: "If a dataset is skewed to the left (negatively skewed), the tail is longer on which side?", options: ["Right", "Left", "Both sides equally", "Middle"], answer: "Left" }
+    ],
+    cc102: [ // Added CC 102 questions
+        { question: "Who designed the C++ programming language in 1985?", options: ["Dennis Ritchie", "Bjarne Stroustrup", "James Gosling", "Guido van Rossum"], answer: "Bjarne Stroustrup" },
+        { question: "What was the original name for C++?", options: ["C#", "Objective-C", "C with Classes", "Enhanced C"], answer: "C with Classes" },
+        { question: "Is C++ a compiled or interpreted language?", options: ["Interpreted", "Compiled", "Both", "Neither"], answer: "Compiled" },
+        { question: "What does IDE stand for in the context of programming?", options: ["Integrated Design Environment", "Internal Development Engine", "Integrated Development Environment", "Interface Design Engine"], answer: "Integrated Development Environment" },
+        { question: "What does the `#include <iostream>` directive do in C++?", options: ["Declares variables", "Starts the main function", "Imports the input/output stream library", "Defines classes"], answer: "Imports the input/output stream library" },
+        { question: "What is the primary function of `int main(void)` in a C++ program?", options: ["To define global variables", "To include header files", "To serve as the program's starting point", "To handle output formatting"], answer: "To serve as the program's starting point" },
+        { question: "Which symbol terminates most C++ statements?", options: [", (comma)", "{ (curly brace)", "; (semicolon)", ": (colon)"], answer: "; (semicolon)" },
+        { question: "What object is used with the `<<` operator to display output to the console?", options: ["cin", "cout", "main", "iostream"], answer: "cout" },
+        { question: "What does `return 0;` typically signify at the end of the `main` function?", options: ["The program encountered an error", "The program is returning a value of 0", "The program exited normally", "The program needs to loop"], answer: "The program exited normally" },
+        { question: "In C++, what is a variable?", options: ["A constant value", "A function name", "An abstraction of a memory location", "An output stream"], answer: "An abstraction of a memory location" },
+        { question: "Which of the following is a valid variable name in C++?", options: ["1stName", "student Name", "student_name", "class"], answer: "student_name" },
+        { question: "What is the data type used for whole numbers in C++?", options: ["float", "char", "string", "int"], answer: "int" },
+        { question: "Which data type is used for single characters in C++?", options: ["int", "string", "char", "float"], answer: "char" },
+        { question: "What is the purpose of the `cin` object in C++?", options: ["To display output", "To accept user input", "To declare variables", "To perform calculations"], answer: "To accept user input" },
+        { question: "Which operator is used with `cin` to get input?", options: ["<< (insertion)", ">> (extraction)", "+ (addition)", "= (assignment)"], answer: ">> (extraction)" },
+        { question: "What does the `%` operator do in C++?", options: ["Integer division", "Multiplication", "Calculates the remainder (modulo)", "Exponentiation"], answer: "Calculates the remainder (modulo)" },
+        { question: "Which logical operator represents 'AND' in C++?", options: ["||", "!", "!=", "&&"], answer: "&&" },
+        { question: "What is the result of the expression `5 < 10` in C++?", options: ["0 (false)", "1 (true)", "5", "10"], answer: "1 (true)" },
+        { question: "How do you declare a variable `age` that can store whole numbers?", options: ["float age;", "char age;", "int age;", "string age;"], answer: "int age;" },
+        { question: "To use the `string` object type, which header file should typically be included?", options: ["<iostream>", "<cmath>", "<string>", "<iomanip>"], answer: "<string>" }, // Note: <cstring> is for C-style string functions, <string> for std::string
+        { question: "Which function is used to read an entire line of text (including spaces) into a `string` object?", options: ["cin >>", "cout <<", "getline(cin, var);", "cin.getline(var, size);"], answer: "getline(cin, var);" },
+        { question: "Which function is used to compare two C-style character arrays (strings)?", options: ["compare()", "==", "strcomp()", "strcmp()"], answer: "strcmp()" },
+        { question: "What statement is used to make decisions in C++ based on a condition?", options: ["while", "for", "if", "switch"], answer: "if" },
+        { question: "In an `if(relational expression)`, what does the expression evaluate to?", options: ["An integer", "A floating-point number", "True or False (non-zero or zero)", "A character"], answer: "True or False (non-zero or zero)" },
+        { question: "What is the purpose of the `else` block in an `if-else` statement?", options: ["To repeat the 'if' block", "To execute if the 'if' condition is true", "To execute if the 'if' condition is false", "To declare variables"], answer: "To execute if the 'if' condition is false" },
+        { question: "Which operator is used to check for equality in a relational expression?", options: ["=", "==", ":=", "!="], answer: "==" },
+        { question: "What does the expression `inpt % 2 == 0` check for?", options: ["If inpt is odd", "If inpt is positive", "If inpt is even", "If inpt is negative"], answer: "If inpt is even" },
+        { question: "Which C++ statement allows selecting one of many code blocks based on the value of an expression?", options: ["if-else if", "while", "for", "switch"], answer: "switch" },
+        { question: "What keyword is used to exit a `switch` block after a `case` is executed?", options: ["exit", "stop", "continue", "break"], answer: "break" },
+        { question: "What does the `default` case in a `switch` statement do?", options: ["It's always executed first", "It executes if no other case matches", "It defines variables", "It exits the switch statement"], answer: "It executes if no other case matches" },
+        { question: "Which loop structure evaluates the condition *before* entering the loop?", options: ["do-while", "while", "for", "switch"], answer: "while" },
+        { question: "Which loop structure is generally more efficient for counter-controlled loops?", options: ["while", "do-while", "for", "if"], answer: "for" },
+        { question: "What are the three parts inside the parentheses of a `for` loop, separated by semicolons?", options: ["Condition, Increment, Initialization", "Initialization, Condition, Change of State", "Change of State, Condition, Initialization", "Initialization, Body, Condition"], answer: "Initialization, Condition, Change of State" },
+        { question: "What does the loop `for(;;)` create?", options: ["A loop that runs once", "A conditional loop", "An infinite loop", "A syntax error"], answer: "An infinite loop" },
+        { question: "Which loop structure guarantees that the loop body will execute at least once?", options: ["for", "while", "if", "do-while"], answer: "do-while" },
+        { question: "What is an array in C++?", options: ["A single variable", "A collection of homogeneous variables", "A type of function", "A decision statement"], answer: "A collection of homogeneous variables" },
+        { question: "How are individual elements of an array accessed?", options: ["By name", "Using an index/subscript", "Through a pointer", "Sequentially only"], answer: "Using an index/subscript" },
+        { question: "What is the index of the first element in a C++ array?", options: ["1", "0", "-1", "Depends on the size"], answer: "0" },
+        { question: "If an array is declared as `int scores[10];`, what is the index of the last element?", options: ["10", "11", "9", "0"], answer: "9" },
+        { question: "What does 'volatile' mean in the context of arrays mentioned in the module?", options: ["They are very fast", "Their contents are lost when the program ends", "They can change size dynamically", "They only store characters"], answer: "Their contents are lost when the program ends" },
+        { question: "What is the purpose of type-casting, like `(float)sum / N;`?", options: ["To declare a variable", "To check for errors", "To force a calculation to result in a specific data type", "To print output"], answer: "To force a calculation to result in a specific data type" },
+        { question: "What is the goal of a sequential search algorithm?", options: ["To sort the array", "To find the average", "To find a specific value within the array", "To find the highest value"], answer: "To find a specific value within the array" },
+        { question: "Which sorting algorithm repeatedly compares adjacent elements and swaps them if they are in the wrong order?", options: ["Selection Sort", "Merge Sort", "Quick Sort", "Bubble Sort"], answer: "Bubble Sort" },
+        { question: "In Selection Sort, where is the smallest (or largest) element placed after each pass through the unsorted part?", options: ["At the end", "In the middle", "At its correct sorted position", "In a temporary variable"], answer: "At its correct sorted position" },
+        { question: "How is the median found in an array with an *even* number of elements after sorting?", options: ["It's the first element", "It's the last element", "It's the average of the two middle elements", "It's the element at index N/2"], answer: "It's the average of the two middle elements" },
+        { question: "Which header file is needed for formatted output manipulators like `setw` and `setprecision`?", options: ["<iostream>", "<string>", "<cmath>", "<iomanip>"], answer: "<iomanip>" },
+        { question: "What does `setw(10)` do?", options: ["Sets the precision to 10 decimal places", "Sets the minimum field width for the next output to 10", "Sets the variable 'w' to 10", "Fills empty space with 10 zeros"], answer: "Sets the minimum field width for the next output to 10" },
+        { question: "Which manipulator is used to align output to the left within its field width?", options: ["right", "fixed", "left", "setfill"], answer: "left" },
+        { question: "What does `fixed << setprecision(2)` achieve for floating-point output?", options: ["Outputs in scientific notation", "Outputs with exactly 2 digits total", "Outputs with a fixed width of 2", "Outputs with exactly 2 digits after the decimal point"], answer: "Outputs with exactly 2 digits after the decimal point" },
+        { question: "What is the purpose of the `setfill('0')` manipulator?", options: ["To set precision to 0", "To fill unused space in a field width with zeros", "To replace all output with zeros", "To set the field width to 0"], answer: "To fill unused space in a field width with zeros" }
     ]
 };
+
+// --- Rest of the JavaScript code remains the same ---
 
 const startScreen = document.getElementById('start-screen');
 const quizScreen = document.getElementById('quiz-screen');
