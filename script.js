@@ -17,7 +17,7 @@ const quizData = {
         { question: "What was the ancient system of writing used by early Filipinos in the pre-colonial period?", options: ["Cuneiform", "Hieroglyphics", "Baybayin", "Alibata"], answer: "Baybayin" },
         { question: "During the Spanish colonial era in the Philippines, science education was primarily introduced through:", options: ["Military training", "Public libraries", "Schools and universities established by Catholic orders", "Trade guilds"], answer: "Schools and universities established by Catholic orders" },
         { question: "Who is known as the 'Father of Philippine Pharmacy' for his work during the Spanish colonial period?", options: ["Dr. Jose Rizal", "Anacleto del Rosario", "Gregorio Zara", "Fe del Mundo"], answer: "Anacleto del Rosario" },
-        { question: "During the American period, what institution was established as the primary research center in the Philippines?", options: ["Department of Science and Technology (DOST)", "University of the Philippines", "Bureau of Science", "National Research Council of the Philippines"], answer: "Bureau of Science" },
+        { question: "During the American period, what institution was established as the primary research center in the Philippines?", options: ["Department of Science and Technology (DOST)", "University of the Philippines", "Bureau of Science", "National Research Council of the Philippines"], answer: "Bureau ofScience" },
         { question: "President Ferdinand Marcos declared a 35-hectare lot in Bicutan, Taguig as the Philippine Science Community, which is now the site of the:", options: ["University of the Philippines Diliman", "Department of Health", "Department of Science and Technology (DOST)", "National Museum"], answer: "Department of Science and Technology (DOST)" },
         { question: "What is a 'paradigm shift' as described by Thomas Kuhn?", options: ["A minor correction to a scientific theory", "A gradual evolution of scientific thought", "A fundamental change in the basic concepts and practices of a scientific discipline", "A new technological invention"], answer: "A fundamental change in the basic concepts and practices of a scientific discipline" },
         { question: "The geocentric model, which places the Earth at the center of the universe, was proposed by which ancient civilization?", options: ["The Mayans", "The Chinese", "The Ancient Greeks", "The Egyptians"], answer: "The Ancient Greeks" },
@@ -263,7 +263,8 @@ const quizData = {
         { question: "Linear regression aims to find the:", options: ["Correlation coefficient", "Standard deviation", "Line of best fit for the data", "Median of the data"], answer: "Line of best fit for the data" },
         { question: "If a dataset is skewed to the left (negatively skewed), the tail is longer on which side?", options: ["Right", "Left", "Both sides equally", "Middle"], answer: "Left" }
     ],
-    cc102: [ // Added CC 102 questions
+    cc102: [ // Keep existing CC 102 questions here
+        // ... (CC102 questions from previous interaction)
         { question: "Who designed the C++ programming language in 1985?", options: ["Dennis Ritchie", "Bjarne Stroustrup", "James Gosling", "Guido van Rossum"], answer: "Bjarne Stroustrup" },
         { question: "What was the original name for C++?", options: ["C#", "Objective-C", "C with Classes", "Enhanced C"], answer: "C with Classes" },
         { question: "Is C++ a compiled or interpreted language?", options: ["Interpreted", "Compiled", "Both", "Neither"], answer: "Compiled" },
@@ -314,6 +315,59 @@ const quizData = {
         { question: "Which manipulator is used to align output to the left within its field width?", options: ["right", "fixed", "left", "setfill"], answer: "left" },
         { question: "What does `fixed << setprecision(2)` achieve for floating-point output?", options: ["Outputs in scientific notation", "Outputs with exactly 2 digits total", "Outputs with a fixed width of 2", "Outputs with exactly 2 digits after the decimal point"], answer: "Outputs with exactly 2 digits after the decimal point" },
         { question: "What is the purpose of the `setfill('0')` manipulator?", options: ["To set precision to 0", "To fill unused space in a field width with zeros", "To replace all output with zeros", "To set the field width to 0"], answer: "To fill unused space in a field width with zeros" }
+    ],
+    // --- ADDED THE NEW SUBJECT AND QUESTIONS HERE ---
+    tcw: [
+        { question: "What best defines globalization?", options: ["Isolation of countries", "Interconnectedness of people worldwide", "Independence from other nations", "Limiting trade"], answer: "Interconnectedness of people worldwide" },
+        { question: "Which term means cultures becoming more similar?", options: ["Glocalization", "Homogenization", "Heterogenization", "Localization"], answer: "Homogenization" },
+        { question: "'Think globally, act locally' refers to:", options: ["Globalism", "Glocalization", "Isolationism", "Modernization"], answer: "Glocalization" },
+        { question: "Martin Khor viewed globalization as:", options: ["Liberation", "Colonization", "Revolution", "Cooperation"], answer: "Colonization" },
+        { question: "What is heterogenization?", options: ["Global cultures uniting", "Retaining cultural uniqueness", "Rejecting modernization", "Political isolation"], answer: "Retaining cultural uniqueness" },
+        { question: "Economic globalization means:", options: ["Limiting trade", "Interdependence of world economies", "Isolating national markets", "Reducing technology"], answer: "Interdependence of world economies" },
+        { question: "The Silk Road is known for:", options: ["Connecting Asia and Europe", "Being a war route", "A political treaty", "A modern highway"], answer: "Connecting Asia and Europe" },
+        { question: "The Manila-Acapulco Galleon Trade connected the Philippines to:", options: ["Spain", "Mexico", "China", "USA"], answer: "Mexico" },
+        { question: "Fiat money is:", options: ["Backed by gold", "Has no intrinsic value", "Made of silver", "A barter item"], answer: "Has no intrinsic value" },
+        { question: "A company operating in several countries is a:", options: ["Local business", "Multinational corporation", "Domestic company", "Startup"], answer: "Multinational corporation" },
+        { question: "The Treaty of Westphalia established:", options: ["Global trade", "State sovereignty", "Democracy", "Colonization"], answer: "State sovereignty" },
+        { question: "Napoleon Bonaparte spread:", options: ["Democracy only", "Freedom, equality, fraternity", "Socialism", "Imperialism"], answer: "Freedom, equality, fraternity" },
+        { question: "What is internationalism?", options: ["Cooperation among states", "Isolationism", "Colonization", "Local politics"], answer: "Cooperation among states" },
+        { question: "The League of Nations was based on:", options: ["Socialist ideals", "Liberal internationalism", "Dictatorship", "Military alliances"], answer: "Liberal internationalism" },
+        { question: "Who coined the term 'International'?", options: ["Immanuel Kant", "Jeremy Bentham", "Karl Marx", "Lenin"], answer: "Jeremy Bentham" },
+        { question: "The UN was established in:", options: ["1918", "1939", "1945", "1950"], answer: "1945" },
+        { question: "The main goal of the UN is to:", options: ["Promote global conflict", "Maintain peace and security", "Limit trade", "Create colonies"], answer: "Maintain peace and security" },
+        { question: "WTO replaced:", options: ["GATT", "NATO", "ASEAN", "EU"], answer: "GATT" },
+        { question: "Kyoto Protocol focused on:", options: ["Women's rights", "Trade laws", "Reducing CO emissions", "Disarmament"], answer: "Reducing CO emissions" },
+        { question: "CEDAW promotes:", options: ["Women's equality", "Arms control", "Economic reform", "Free trade"], answer: "Women's equality" },
+        { question: "Protectionism aims to:", options: ["Boost imports", "Protect local industries", "Remove tariffs", "Promote globalization"], answer: "Protect local industries" },
+        { question: "Tariffs are:", options: ["Taxes on imports", "Government loans", "Exports", "Currencies"], answer: "Taxes on imports" },
+        { question: "Immanuel Wallerstein's theory is:", options: ["Marxism", "World Systems Theory", "Game Theory", "Modernization Theory"], answer: "World Systems Theory" },
+        { question: "Core countries are:", options: ["Economically dependent", "Poor and unstable", "Industrialized and wealthy", "Isolated"], answer: "Industrialized and wealthy" },
+        { question: "The Philippines is part of the:", options: ["Core", "Semi-periphery", "Periphery", "North"], answer: "Semi-periphery" },
+        { question: "ASEAN was founded in:", options: ["1967", "1975", "1984", "1999"], answer: "1967" },
+        { question: "Which country is NOT an original ASEAN member?", options: ["Indonesia", "Philippines", "Brunei", "Thailand"], answer: "Brunei" },
+        { question: "Regionalism means:", options: ["Political cooperation among neighbors", "Total independence", "Cultural isolation", "Free trade"], answer: "Political cooperation among neighbors" },
+        { question: "Regionalization refers to:", options: ["Economic interaction", "Political alliance", "War formation", "Social division"], answer: "Economic interaction" },
+        { question: "The main goal of ASEAN is:", options: ["War prevention", "Economic growth and stability", "Cultural dominance", "Territorial expansion"], answer: "Economic growth and stability" },
+        { question: "Global North includes:", options: ["Africa", "Japan", "Brazil", "India"], answer: "Japan" },
+        { question: "Global South includes:", options: ["USA", "Canada", "Philippines", "Germany"], answer: "Philippines" },
+        { question: "The term Global South replaced:", options: ["East-West", "First, Second, Third World", "Cold War", "Globalization"], answer: "First, Second, Third World" },
+        { question: "What separates North from South?", options: ["Geography", "Economic development", "Religion", "Language"], answer: "Economic development" },
+        { question: "World inequality is caused by:", options: ["Equal trade", "Climate only", "Unequal resources and governance", "Similar growth"], answer: "Unequal resources and governance" },
+        { question: "'Workers of the world unite!' was said by:", options: ["Lenin", "Marx & Engels", "Wilson", "Mazzini"], answer: "Marx & Engels" },
+        { question: "The UN Secretary-General as of 2025 is:", options: ["António Guterres", "Ban Ki-moon", "Kofi Annan", "Boutros Boutros-Ghali"], answer: "António Guterres" },
+        { question: "Which treaty reduced trade barriers?", options: ["CEDAW", "GATT", "Kyoto", "NAM"], answer: "GATT" },
+        { question: "Which organization manages international trade?", options: ["WTO", "WHO", "IMF", "NATO"], answer: "WTO" },
+        { question: "Which of the following is NOT a goal of global governance?", options: ["Promote peace", "Increase inequality", "Ensure justice", "Develop standards"], answer: "Increase inequality" },
+        { question: "Global catastrophic risk includes:", options: ["Economic stability", "Pandemics and nuclear war", "Trade growth", "Population decline"], answer: "Pandemics and nuclear war" },
+        { question: "Poverty means:", options: ["Lack of money and basic needs", "Political instability", "Overpopulation", "Cultural change"], answer: "Lack of money and basic needs" },
+        { question: "Population explosion causes:", options: ["More food security", "Resource depletion", "Peace", "Balanced growth"], answer: "Resource depletion" },
+        { question: "Terrorism aims to:", options: ["Promote peace", "Coerce through violence", "Support governments", "Reduce migration"], answer: "Coerce through violence" },
+        { question: "Environmental degradation results from:", options: ["Industrial growth", "Balanced consumption", "Overpopulation and pollution", "Green policies"], answer: "Overpopulation and pollution" },
+        { question: "Which describes glocalization best?", options: ["Global ideas adapted locally", "Local ideas becoming global", "Isolation", "Colonization"], answer: "Global ideas adapted locally" },
+        { question: "What is the opposite of free trade?", options: ["Globalization", "Protectionism", "Liberalization", "Cooperation"], answer: "Protectionism" },
+        { question: "Who believed sovereignty prevents chaos among states?", options: ["Kant", "Bentham", "Marx", "Stalin"], answer: "Kant" }, // Note: Answer key says A (Kant), PDF text has Kant.
+        { question: "The main principle of World Trade Organization is:", options: ["Free trade and dispute resolution", "War prevention", "Labor rights", "Migration"], answer: "Free trade and dispute resolution" },
+        { question: "'Think globally, act locally' promotes:", options: ["Homogenization", "Glocalization", "Isolation", "Uniformity"], answer: "Glocalization" }
     ]
 };
 
@@ -368,12 +422,27 @@ function startQuiz() {
     allQuestions = [...quizData[currentSubject]];
     // Ensure we don't try to slice more questions than available
     const numAvailableQuestions = allQuestions.length;
+    // Adjust questionsPerQuiz to be the actual number of questions for the subject, up to 50
     const questionsToTake = Math.min(questionsPerQuiz, numAvailableQuestions);
+    
+    // If the subject has FEWER than 50 questions, take all of them.
+    // If the subject has 50 or MORE, take exactly 50.
+    // The new TCW subject has exactly 50, so this logic works.
+    let questionsForThisQuiz = questionsToTake;
+    
+    // Special check: if a subject has *more* than 50, we still only take 50
+    if (numAvailableQuestions >= questionsPerQuiz) {
+        questionsForThisQuiz = questionsPerQuiz;
+    } else {
+        // if a subject has *fewer* than 50 (e.g. 49), we take all 49
+        questionsForThisQuiz = numAvailableQuestions;
+    }
 
-    currentQuizQuestions = shuffleArray(allQuestions).slice(0, questionsToTake);
 
-    // If fewer than 'questionsPerQuiz' are available, adjust the total count displayed
-    if (currentQuizQuestions.length < questionsPerQuiz) {
+    currentQuizQuestions = shuffleArray(allQuestions).slice(0, questionsForThisQuiz);
+
+    // If fewer than 'questionsPerQuiz' are available, warn but proceed
+    if (currentQuizQuestions.length < questionsPerQuiz && currentQuizQuestions.length > 0) {
         console.warn(`Only ${currentQuizQuestions.length} questions available for ${currentSubject}. Quiz length adjusted.`);
     }
 
@@ -391,8 +460,8 @@ function startQuiz() {
     if (currentQuizQuestions.length > 0) {
       loadQuestion();
     } else {
-      alert("Error: Could not load questions for the quiz.");
-      // Optionally show start screen again or an error message
+      // This should ideally not be reached if the check at the start works
+      console.error("Error: Could not load questions for the quiz.");
       startScreen.classList.remove('hidden');
       quizScreen.classList.add('hidden');
     }
@@ -470,11 +539,15 @@ function selectAnswer(button, selectedOption) {
 
 function updateProgress() {
     // Handle case where there might be 0 questions
-    const totalQuestions = currentQuizQuestions.length > 0 ? currentQuizQuestions.length : 1;
+    const totalQuestions = currentQuizQuestions.length;
+    // Ensure totalQuestions is at least 1 to avoid division by zero if array is empty
+    const totalQuestionsForCalc = totalQuestions > 0 ? totalQuestions : 1;
+    
     const currentQNumber = currentQuestionIndex + 1;
-    const progressPercentage = (currentQNumber / totalQuestions) * 100;
+    const progressPercentage = (currentQNumber / totalQuestionsForCalc) * 100;
 
-    questionCounter.textContent = `Question ${currentQNumber}/${currentQuizQuestions.length}`;
+    // Display the correct total number of questions for this specific quiz
+    questionCounter.textContent = `Question ${currentQNumber}/${totalQuestions}`;
     progressBar.style.width = `${progressPercentage}%`;
 }
 
@@ -543,5 +616,6 @@ retryBtn.addEventListener('click', () => {
      // Reset progress bar and score display visually if needed
      progressBar.style.width = `0%`;
      scoreDisplay.textContent = `Score: 0`;
-     questionCounter.textContent = `Question 1/${questionsPerQuiz}`; // Reset counter display
+     // Reset counter display to default
+     questionCounter.textContent = `Question 1/50`;
 });
